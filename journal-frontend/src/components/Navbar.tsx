@@ -1,25 +1,27 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from '../assets/journal.jpg'
 
 function Navbar() {
-    // const margins = {
-    //     marginLeft: "100px"
-    // };
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                {/*<a className={`${margins} navbar-brand`} href="#">journal!</a>*/}
-                <button className="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
+            <nav className={"navbar navbar-expand-lg fixed-top navbar-light bg-light"} style={{height: '80px', fontSize: '20px'}} >
 
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav mr-auto">
-                        <li className="nav-item active">
-                            <a className="nav-link" href="/books">Books</a>
-                        </li>
-                    </ul>
+                <div className="container-fluid" style={{marginLeft: '20px', marginRight: '20px'}}>
+                    <a className="navbar-brand" href="#">
+                        <img src={logo} height="30" alt="" loading="lazy"/>
+                    </a>
+
+                    <img src="../assets/journal-small.jpg" height="30" alt="" loading="lazy"/>
+                    <div className="collapse navbar-collapse">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <a className="nav-link" href="/home">Home</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/books">Books</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </>

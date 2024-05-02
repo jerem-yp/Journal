@@ -2,7 +2,7 @@
 function Home() {
     return (
         <>
-            <p className={"h2"}>An online journal</p>
+            <p className={"h2"}></p>
         </>
     )
 }

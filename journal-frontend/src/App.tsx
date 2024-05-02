@@ -1,5 +1,4 @@
 // Major components
-// import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Components
@@ -16,10 +15,9 @@ import Home from "./pages/Home.tsx";
 function App() {
     return (
         <>
+            <Navbar />
             <div className="default">
                 <Title />
-                <Navbar />
-
                 <Router>
                     <Routes>
                         <Route path="/" element={<Home />} />
