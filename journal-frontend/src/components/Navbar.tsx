@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../assets/journal.jpg'
+import logo from '../assets/journal.png'
 
 function Navbar() {
     return (
@@ -8,7 +8,7 @@ function Navbar() {
 
                 <div className="container-fluid" style={{marginLeft: '20px', marginRight: '20px'}}>
                     <a className="navbar-brand" href="#">
-                        <img src={logo} height="30" alt="" loading="lazy"/>
+                        <img src={logo} height="70" alt="" loading="lazy"/>
                     </a>
 
                     <img src="../assets/journal-small.jpg" height="30" alt="" loading="lazy"/>
