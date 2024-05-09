@@ -1,0 +1,53 @@
+.div-row {
+    display: flex;
+}
+
+.div-row .sixty {
+    width: 60%;
+    padding-right: 10px;
+}
+
+.div-row .thirty {
+    width: 30%;
+    padding-right: 10px;
+}
+
+.div-row .five {
+    flex: 1;
+    height: 70%;
+}
+
+.div-row .twenty-five {
+    width: 25%;
+    padding-right: 10px;
+}
+
+.space {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.div-thirty {
+    width: 30%;
+}
+
+.div-row .thirty-five {
+    width: 35%;
+    margin-right: 10px;
+}
+
+.div-row .full-flex {
+    flex: 1;
+}
+
+.div-row .twenty-space {
+    width: 25%;
+}
+
+.set-margin-bottom {
+    margin-bottom: 5px;
+}
+
+.orange {
+    color: orange;
+}
