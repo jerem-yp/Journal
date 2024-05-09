@@ -1,22 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button, Form} from 'react-bootstrap';
 import {Collapse, Card} from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 
 // My components
-import SearchBar from "./SearchBar.tsx";
-import Select from "./Select.tsx";
-import InProgress from "./books/InProgress.tsx";
+
 
 function BookForm() {
     const [open, setOpen] = React.useState(false);
-
-    const sort = ["Recently Added", "Title", "Author", "Rating"];
-    const order = ["Descending", "Ascending"];
-    const page = ["5", "10", "25"];
-    const books = []
     return (
         <>
             <div className={"m-4"}>
@@ -55,37 +46,6 @@ function BookForm() {
                         </Card>
                     </div>
                 </Collapse>
-
-                <div className={"div-row"}>
-                    <div className={"sixty"}>
-                        <SearchBar label={"Search Books..."}/>
-                    </div>
-                    <div className={"thirty"}>
-                        <SearchBar label={"Author..."} />
-                    </div>
-                    <Button variant={"outline-primary"} className={"five"}>
-                        <FontAwesomeIcon icon={faMagnifyingGlass} />
-                    </Button>
-                </div>
-
-                <div className={"div-row"}>
-                    <div className={"twenty-five"}>
-                        <Select itemList={sort} defaultVal={"Sort by..."}/>
-                    </div>
-                    <div className={"twenty-five"}>
-                        <Select itemList={order} defaultVal={"Order by..."} />
-                    </div>
-                    <div className={"twenty-five"}>
-                        <Select itemList={page} defaultVal={"Number per page..."} />
-                    </div>
-                </div>
-
-                <div className={"space div-row"}>
-                    <div className={"div-thirty"}>
-                        <InProgress books={books}></InProgress>
-                    </div>
-                </div>
-
             </div>
         </>
     )
