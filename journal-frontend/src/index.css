@@ -22,6 +22,23 @@
     padding-right: 10px;
 }
 
+.split-between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.split-between .element {
+    text-align: center;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.split-between:last-child {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+
 .space {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -48,6 +65,75 @@
     margin-bottom: 5px;
 }
 
+.set-margin-bottom-far {
+    margin-bottom: 15px;
+}
+
 .orange {
     color: orange;
+}
+
+.default {
+    margin-top: 100px;
+}
+
+.home-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rounded-edges {
+    border-radius: 5px;
+}
+
+.small-width {
+    width: 40%
+}
+
+.large-width {
+    width: 80%
+}
+
+.background {
+    /*background: linear-gradient(to bottom right, white, tan);*/
+    width: 100%;
+    position: absolute;
+    margin: 0;
+}
+
+.flex-full {
+    flex: 1;
+}
+
+.half-screen-height {
+    height: 20vh;
+}
+
+.inline-row {
+    display: inline-block;
+}
+
+.set-margin-right {
+    margin-right: 10px;
+}
+
+.set-margin-right-small {
+    margin-right: 3px;
+}
+
+.set-padding-all {
+    padding: 5px;
+}
+
+.float-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.float-shadow:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
