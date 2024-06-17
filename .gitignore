@@ -1,2 +1,5 @@
 # IDE files
 .idea
+
+# No environment files
+.env
