@@ -1,0 +1,10 @@
+@base_url = http://localhost:8080
+@env = development
+
+### Creative Writing Section
+
+# Error
+GET {{base_url}}/api/creative-writing/err
+###
+# Prompt fetch
+GET {{base_url}}/api/creative-writing/fetch-prompts
